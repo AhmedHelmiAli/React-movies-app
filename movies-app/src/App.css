@@ -1,0 +1,162 @@
+img {
+  display: block;
+  width: 100%;
+}
+.image {
+  height: 320px;
+  object-fit: fill !important;
+  display: block;
+  width: 100%;
+}
+.link,
+a {
+  text-decoration: none;
+  color: black;
+}
+.mainImg img {
+  width: 100%;
+  display: block;
+}
+.mainImg {
+  position: relative;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0.7;
+  background-color: #000;
+}
+.mainImg img:nth-child(2) {
+  position: absolute;
+  top: 40%;
+  left: 2%;
+  height: 490px;
+  width: 350px;
+  z-index: 999;
+  border: 1px solid #fff3;
+}
+
+.hero-section {
+  position: absolute;
+  top: 40%;
+  left: 33%;
+  color: #fff;
+  z-index: 999;
+}
+.logo {
+  width: 120px;
+  height: 70px;
+  display: block;
+}
+
+.movie-details {
+  position: absolute;
+  top: 103%;
+  left: 33%;
+  right: 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.pipe {
+  height: 35px;
+  width: 2px;
+  background-color: #fff;
+  opacity: 0.3;
+}
+.more-info {
+  display: flex;
+}
+.col {
+  display: flex;
+  flex-direction: column;
+  margin-left: 2rem;
+}
+.additional-details {
+  display: flex;
+  margin: 2rem 0;
+  align-items: center;
+  gap: 2rem;
+}
+.black {
+  height: 40px;
+  width: 2px;
+  background-color: #000;
+  opacity: 0.3;
+  margin-left: 2rem;
+}
+.watchlist-img {
+  height: 300px;
+  width: 260px;
+  border-radius: 10px 0 0 10px;
+}
+.toolbar {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+@media (max-width: 1100px) {
+  .mainImg img:nth-child(2) {
+    position: absolute;
+    top: 42%;
+    left: 1%;
+    height: 400px;
+    width: 280px;
+  }
+  .hero-section {
+    top: 10%;
+  }
+  .movie-details {
+    top: 104%;
+  }
+}
+@media (max-width: 880px) {
+  .hero-section {
+    top: 28%;
+    left: 40%;
+  }
+  .movie-details {
+    left: 44%;
+    top: 108%;
+  }
+  .additional-details {
+    font-size: 0.5rem !important;
+  }
+  .hero-section .title,
+  .hero-section .overview {
+    font-size: 0.8rem !important;
+  }
+  .mainImg img:nth-child(2) {
+    position: absolute;
+    top: 28%;
+    left: 1%;
+    height: 400px;
+    width: 280px;
+  }
+}
+@media (max-width: 740px) {
+  .mainImg img:nth-child(2) {
+    display: none;
+  }
+  .hero-section {
+    top: 5%;
+    left: 0%;
+  }
+  .movie-details {
+    left: 0%;
+    right: 0;
+    top: 108%;
+  }
+  .hero-section .title {
+    font-size: 0.6rem;
+    margin-bottom: 0.2rem;
+  }
+  .hero-section .overview {
+    font-size: 0.5rem;
+  }
+}
